@@ -3,18 +3,17 @@
 
 
 > 课前学习资料：
-> [1. How we build TiDB](https://pingcap.com/blog-cn/how-do-we-build-tidb/)
-> [2. 三篇文章了解 TiDB 技术内幕 - 说存储](https://pingcap.com/blog-cn/tidb-internal-1/)
-> [3. 三篇文章了解 TiDB 技术内幕 - 说计算](https://pingcap.com/blog-cn/tidb-internal-2/)
-> [4. 三篇文章了解 TiDB 技术内幕 - 谈调度](https://pingcap.com/blog-cn/tidb-internal-3/)
-> 视频：[https://www.bilibili.com/video/BV17K411T7Kd](https://www.bilibili.com/video/BV17K411T7Kd)
-> 课程作业：
-> 本地下载 TiDB，TiKV，PD 源代码，改写源码并编译部署以下环境：
+> [1. How we build TiDB](https://pingcap.com/blog-cn/how-do-we-build-tidb/)  
+> [2. 三篇文章了解 TiDB 技术内幕 - 说存储](https://pingcap.com/blog-cn/tidb-internal-1/)  
+> [3. 三篇文章了解 TiDB 技术内幕 - 说计算](https://pingcap.com/blog-cn/tidb-internal-2/)  
+> [4. 三篇文章了解 TiDB 技术内幕 - 谈调度](https://pingcap.com/blog-cn/tidb-internal-3/)  
+> 视频：[https://www.bilibili.com/video/BV17K411T7Kd](https://www.bilibili.com/video/BV17K411T7Kd)  
+> 课程作业：  
+> 本地下载 TiDB，TiKV，PD 源代码，改写源码并编译部署以下环境：  
 > - 1 TiDB
 > - 1 PD
 > - 3 TiKV
-> 
-改写后：使得 TiDB 启动事务时，能打印出一个 “hello transaction” 的 日志
+> 改写后：使得 TiDB 启动事务时，能打印出一个 “hello transaction” 的 日志
 
 
 <br />TIDB架构:<br />![image.png](https://cdn.nlark.com/yuque/0/2020/png/87032/1597543776239-8f06dda5-4b30-4936-82d1-a913f44f391e.png#align=left&display=inline&height=591&margin=%5Bobject%20Object%5D&name=image.png&originHeight=1182&originWidth=2200&size=207352&status=done&style=none&width=1100)<br />根据架构图的依赖关系，我们依次部署 pd, tikv, tidb。
